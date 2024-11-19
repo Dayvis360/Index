@@ -1,0 +1,180 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    position: relative;
+}
+
+
+
+.image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.3);
+}
+
+.text-overlay {
+    color: rgb(72, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search {
+    padding: 5px;
+}
+
+/* Barra de navegación */
+.nav ul {
+    max-width: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #e0d6d6;
+    justify-content: space-around;
+}
+
+.nav li {
+    margin: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0;
+}
+
+/* Contenido principal */
+.content {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+
+
+
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background: rgba(201, 35, 62, 0.7);
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 28px;
+    z-index: 1;
+}
+
+.carousel-button:hover {
+    background: rgba(209, 112, 129, 0.9);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* box's */
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos del contenido principal */
+.main {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #f8d7da;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos de iconos */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    padding: 5px;
+    cursor: pointer;
+}
+
